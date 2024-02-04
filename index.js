@@ -5,7 +5,7 @@ const app = express()
 const path = require('path')
 
 const dbPath = path.join(__dirname, 'goodreads.db')
-const db = null
+let db = null
 const initializeDBAndServer = async () => {
   try {
     db = await open({
